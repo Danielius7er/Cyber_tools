@@ -1,0 +1,55 @@
+# ──────────────────────────────────────────────────
+#  CyberSec Toolkit — Configuração Principal
+# ──────────────────────────────────────────────────
+
+# Configurações do scanner de arquivos
+scanner:
+  # Diretórios extras a ignorar na varredura
+  skip_dirs:
+    - ".cache"
+    - ".local/share/Trash"
+    - "snap"
+  # Tamanho máximo de arquivo a analisar (MB)
+  max_file_size_mb: 50
+  # Threads padrão
+  default_threads: 4
+
+# Configurações de integridade
+integrity:
+  # Algoritmo de hash para baselines
+  algorithm: sha256
+  # Extensões a excluir do monitoramento
+  exclude_extensions:
+    - ".log"
+    - ".tmp"
+    - ".swp"
+    - ".cache"
+
+# Configurações de rede
+network:
+  # Portas adicionais a considerar suspeitas
+  extra_suspicious_ports: []
+  # Timeout de resolução DNS (segundos)
+  dns_timeout: 2
+
+# Integração com VirusTotal (opcional)
+virustotal:
+  # Insira sua API key gratuita em: https://www.virustotal.com/gui/my-apikey
+  api_key: ""
+  # Limite de requisições por minuto (plano gratuito: 4/min)
+  rate_limit: 4
+
+# Fontes de assinaturas de malware
+signatures:
+  sources:
+    - "https://bazaar.abuse.ch/export/txt/sha256/recent/"
+
+# Configurações de log
+logging:
+  level: INFO   # DEBUG, INFO, WARNING, ERROR
+  max_log_days: 30
+
+# Configurações de relatório
+reporting:
+  output_dir: "reports/"
+  default_format: "html"
