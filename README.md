@@ -1,4 +1,4 @@
-# 🛡 CyberSec Toolkit
+#  CyberSec Toolkit
 
 > Toolkit de cibersegurança para linha de comando — detecção de malware, monitoramento de integridade, análise de rede e processos suspeitos.
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Funcionalidades
+## Funcionalidades
 
 | Módulo | Descrição |
 |--------|-----------|
@@ -64,7 +64,7 @@ cybersec-toolkit/
 
 ---
 
-## 🚀 Instalação
+## Instalação
 
 ### Requisitos
 - Python **3.9+**
@@ -100,7 +100,7 @@ python main.py --help
 
 ---
 
-## 🔍 Exemplos de Uso
+## Exemplos de Uso
 
 ### Varredura de Arquivos
 
@@ -197,7 +197,7 @@ python main.py db stats
 
 ---
 
-## ⚙️ Configuração
+##  Configuração
 
 Edite `config/config.yaml` para personalizar o comportamento:
 
@@ -218,7 +218,7 @@ network:
 
 ---
 
-## 📊 Técnicas de Detecção
+##  Técnicas de Detecção
 
 ### Scanner de Malware
 | Técnica | Descrição |
@@ -270,7 +270,7 @@ Ransomware          → Fernet/AES em massa, encrypt() loops
 
 ---
 
-## 📦 Dependências
+##  Dependências
 
 | Pacote | Uso |
 |--------|-----|
